@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		642AA40E2B8F0C1F00700255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA40D2B8F0C1F00700255 /* AppDelegate.swift */; };
 		642AA4102B8F0C1F00700255 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA40F2B8F0C1F00700255 /* SceneDelegate.swift */; };
-		642AA4122B8F0C1F00700255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA4112B8F0C1F00700255 /* ViewController.swift */; };
-		642AA4152B8F0C1F00700255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642AA4132B8F0C1F00700255 /* Main.storyboard */; };
 		642AA4172B8F0C2000700255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642AA4162B8F0C2000700255 /* Assets.xcassets */; };
 		642AA41A2B8F0C2000700255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642AA4182B8F0C2000700255 /* LaunchScreen.storyboard */; };
+		642AA4232B8F0E9200700255 /* ViewAnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA4222B8F0E9200700255 /* ViewAnimationsController.swift */; };
+		642AA4252B8F0F1100700255 /* KeyFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA4242B8F0F1100700255 /* KeyFrameViewController.swift */; };
+		642AA4272B8F0F3E00700255 /* CAAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA4262B8F0F3E00700255 /* CAAnimationsViewController.swift */; };
+		642AA4292B8F0F5100700255 /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642AA4282B8F0F5100700255 /* PropertyAnimatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		642AA40A2B8F0C1F00700255 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		642AA40D2B8F0C1F00700255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		642AA40F2B8F0C1F00700255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		642AA4112B8F0C1F00700255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		642AA4142B8F0C1F00700255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		642AA4162B8F0C2000700255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642AA4192B8F0C2000700255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		642AA41B2B8F0C2000700255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642AA4222B8F0E9200700255 /* ViewAnimationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimationsController.swift; sourceTree = "<group>"; };
+		642AA4242B8F0F1100700255 /* KeyFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameViewController.swift; sourceTree = "<group>"; };
+		642AA4262B8F0F3E00700255 /* CAAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAAnimationsViewController.swift; sourceTree = "<group>"; };
+		642AA4282B8F0F5100700255 /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		642AA40C2B8F0C1F00700255 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				642AA4212B8F0E6B00700255 /* Controllers */,
 				642AA40D2B8F0C1F00700255 /* AppDelegate.swift */,
 				642AA40F2B8F0C1F00700255 /* SceneDelegate.swift */,
-				642AA4112B8F0C1F00700255 /* ViewController.swift */,
-				642AA4132B8F0C1F00700255 /* Main.storyboard */,
 				642AA4162B8F0C2000700255 /* Assets.xcassets */,
 				642AA4182B8F0C2000700255 /* LaunchScreen.storyboard */,
 				642AA41B2B8F0C2000700255 /* Info.plist */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		642AA4212B8F0E6B00700255 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				642AA4222B8F0E9200700255 /* ViewAnimationsController.swift */,
+				642AA4242B8F0F1100700255 /* KeyFrameViewController.swift */,
+				642AA4262B8F0F3E00700255 /* CAAnimationsViewController.swift */,
+				642AA4282B8F0F5100700255 /* PropertyAnimatorViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +141,6 @@
 			files = (
 				642AA41A2B8F0C2000700255 /* LaunchScreen.storyboard in Resources */,
 				642AA4172B8F0C2000700255 /* Assets.xcassets in Resources */,
-				642AA4152B8F0C1F00700255 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +151,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				642AA4122B8F0C1F00700255 /* ViewController.swift in Sources */,
+				642AA4292B8F0F5100700255 /* PropertyAnimatorViewController.swift in Sources */,
+				642AA4272B8F0F3E00700255 /* CAAnimationsViewController.swift in Sources */,
 				642AA40E2B8F0C1F00700255 /* AppDelegate.swift in Sources */,
 				642AA4102B8F0C1F00700255 /* SceneDelegate.swift in Sources */,
+				642AA4252B8F0F1100700255 /* KeyFrameViewController.swift in Sources */,
+				642AA4232B8F0E9200700255 /* ViewAnimationsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		642AA4132B8F0C1F00700255 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				642AA4142B8F0C1F00700255 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		642AA4182B8F0C2000700255 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +305,9 @@
 				INFOPLIST_FILE = Animations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +315,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = noisy.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,9 +337,9 @@
 				INFOPLIST_FILE = Animations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +347,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = noisy.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
